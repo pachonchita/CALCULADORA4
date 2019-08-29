@@ -1,6 +1,6 @@
 ﻿namespace CALCULADORA4
 {
-    partial class Form1
+    partial class calculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -163,75 +163,91 @@
             // 
             // buttonC
             // 
+            this.buttonC.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonC.Location = new System.Drawing.Point(177, 105);
             this.buttonC.Name = "buttonC";
             this.buttonC.Size = new System.Drawing.Size(43, 37);
             this.buttonC.TabIndex = 11;
             this.buttonC.Text = "C";
-            this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.UseVisualStyleBackColor = false;
+            this.buttonC.Click += new System.EventHandler(this.ButtonC_Click);
             // 
             // buttonCE
             // 
+            this.buttonCE.BackColor = System.Drawing.Color.RosyBrown;
             this.buttonCE.Location = new System.Drawing.Point(226, 105);
             this.buttonCE.Name = "buttonCE";
             this.buttonCE.Size = new System.Drawing.Size(43, 37);
             this.buttonCE.TabIndex = 12;
             this.buttonCE.Text = "CE";
-            this.buttonCE.UseVisualStyleBackColor = true;
+            this.buttonCE.UseVisualStyleBackColor = false;
+            this.buttonCE.Click += new System.EventHandler(this.ButtonCE_Click);
             // 
             // buttonENTRE
             // 
+            this.buttonENTRE.BackColor = System.Drawing.Color.LightCoral;
             this.buttonENTRE.Location = new System.Drawing.Point(177, 148);
             this.buttonENTRE.Name = "buttonENTRE";
             this.buttonENTRE.Size = new System.Drawing.Size(43, 37);
             this.buttonENTRE.TabIndex = 13;
             this.buttonENTRE.Text = "/";
-            this.buttonENTRE.UseVisualStyleBackColor = true;
+            this.buttonENTRE.UseVisualStyleBackColor = false;
+            this.buttonENTRE.Click += new System.EventHandler(this.ButtonENTRE_Click);
             // 
             // buttonMENOS
             // 
+            this.buttonMENOS.BackColor = System.Drawing.Color.LightCoral;
             this.buttonMENOS.Location = new System.Drawing.Point(226, 148);
             this.buttonMENOS.Name = "buttonMENOS";
             this.buttonMENOS.Size = new System.Drawing.Size(43, 37);
             this.buttonMENOS.TabIndex = 14;
             this.buttonMENOS.Text = "-";
-            this.buttonMENOS.UseVisualStyleBackColor = true;
+            this.buttonMENOS.UseVisualStyleBackColor = false;
+            this.buttonMENOS.Click += new System.EventHandler(this.ButtonMENOS_Click);
             // 
             // buttonPOR
             // 
+            this.buttonPOR.BackColor = System.Drawing.Color.LightCoral;
             this.buttonPOR.Location = new System.Drawing.Point(177, 191);
             this.buttonPOR.Name = "buttonPOR";
             this.buttonPOR.Size = new System.Drawing.Size(43, 37);
             this.buttonPOR.TabIndex = 15;
-            this.buttonPOR.Text = "*";
-            this.buttonPOR.UseVisualStyleBackColor = true;
+            this.buttonPOR.Text = "x";
+            this.buttonPOR.UseVisualStyleBackColor = false;
+            this.buttonPOR.Click += new System.EventHandler(this.ButtonPOR_Click);
             // 
             // buttonMAS
             // 
+            this.buttonMAS.BackColor = System.Drawing.Color.LightCoral;
             this.buttonMAS.Location = new System.Drawing.Point(226, 191);
             this.buttonMAS.Name = "buttonMAS";
             this.buttonMAS.Size = new System.Drawing.Size(43, 37);
             this.buttonMAS.TabIndex = 16;
             this.buttonMAS.Text = "+";
-            this.buttonMAS.UseVisualStyleBackColor = true;
+            this.buttonMAS.UseVisualStyleBackColor = false;
+            this.buttonMAS.Click += new System.EventHandler(this.ButtonMAS_Click);
             // 
             // buttonIGUAL
             // 
+            this.buttonIGUAL.BackColor = System.Drawing.Color.LightCoral;
             this.buttonIGUAL.Location = new System.Drawing.Point(177, 232);
             this.buttonIGUAL.Name = "buttonIGUAL";
             this.buttonIGUAL.Size = new System.Drawing.Size(43, 37);
             this.buttonIGUAL.TabIndex = 17;
             this.buttonIGUAL.Text = "=";
-            this.buttonIGUAL.UseVisualStyleBackColor = true;
+            this.buttonIGUAL.UseVisualStyleBackColor = false;
+            this.buttonIGUAL.Click += new System.EventHandler(this.ButtonIGUAL_Click);
             // 
             // buttonPORCIENTO
             // 
+            this.buttonPORCIENTO.BackColor = System.Drawing.Color.LightCoral;
             this.buttonPORCIENTO.Location = new System.Drawing.Point(226, 232);
             this.buttonPORCIENTO.Name = "buttonPORCIENTO";
             this.buttonPORCIENTO.Size = new System.Drawing.Size(43, 37);
             this.buttonPORCIENTO.TabIndex = 18;
             this.buttonPORCIENTO.Text = "%";
-            this.buttonPORCIENTO.UseVisualStyleBackColor = true;
+            this.buttonPORCIENTO.UseVisualStyleBackColor = false;
+            this.buttonPORCIENTO.Click += new System.EventHandler(this.ButtonPORCIENTO_Click);
             // 
             // textRESULTADO
             // 
@@ -240,8 +256,9 @@
             this.textRESULTADO.Name = "textRESULTADO";
             this.textRESULTADO.Size = new System.Drawing.Size(266, 57);
             this.textRESULTADO.TabIndex = 19;
+            this.textRESULTADO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Form1
+            // calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -268,7 +285,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.Maroon;
-            this.Name = "Form1";
+            this.Name = "calculadora";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
